@@ -11,12 +11,12 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.MyselfApps"
+        android:screenOrientation="portrait"
         tools:ignore="LockedOrientationActivity"
         tools:targetApi="34">
         <activity
             android:name=".MainActivity"
-            android:exported="false"
-            android:screenOrientation="portrait"/>
+            android:exported="false"/>
         <activity
             android:name=".walkthrough"
             android:exported="false"
@@ -24,7 +24,6 @@
         <activity
             android:name=".SplashActivity"
             android:exported="true"
-            android:screenOrientation="portrait"
             android:theme="@style/SplashTheme">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
