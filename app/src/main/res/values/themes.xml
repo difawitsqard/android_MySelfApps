@@ -12,7 +12,6 @@
     </style>
 
     <style name="walkthrough" parent="Base.Theme.MyselfApps">
-        <item name="android:windowFullscreen">true</item>
         <item name="android:statusBarColor">#FFFFFF</item>
     </style>
 
