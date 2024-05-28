@@ -1,0 +1,109 @@
+<resources>
+    <string name="app_name">difawitsqard</string>
+    <string name="full_name">Difa Witsqa Raqina Dhiya</string>
+    <string name="lewati">Lewati</string>
+
+    <!-- walkthrough -->
+    <string-array name="walkthrough_images">
+        <item>walk_ucing1</item>
+        <item>walk_ucing2</item>
+        <item>walk_ucing3</item>
+    </string-array>
+
+    <string-array name="walkthrough_titles">
+        <item>Selamat Datang</item>
+        <item>Tentang</item>
+        <item>Jelajahi Fitur</item>
+    </string-array>
+
+    <string-array name="walkthrough_descriptions">
+        <item>Aplikasi ini dibuat untuk memenuhi tugas pemograman android.</item>
+        <item>Dengan adanya aplikasi ini semoga kamu bisa lebih kenal aku.</item>
+        <item>Sekarang kamu siap menjelajahi fitur-fitur yang ditawarkan oleh difawitsqard App. Coba telusuri untuk menemukan opsi seperti Daily Activity dan masih banyak lagi.</item>
+    </string-array>
+
+    <!-- Profile Section -->
+    <string name="profile_picture_desc">Profile Picture</string>
+    <string name="profile_description">Hallo Saya Difa, Saya seorang editor video dan foto, saya mulai merasa tertarik pada dunia pengembangan perangkat lunak. Meskipun waktunya sulit dibagi karena pekerjaan dan hal lainnya, tapi saya yakin dapat mengembangkan keterampilan pemrograman saya dan memperluas wawasan dalam bidang ini. Doain ya hehe</string>
+
+    <!-- Interests Section -->
+    <string name="interests_title">Interests</string>
+    <string name="hobby_title">Hobby</string>
+    <string name="hobby_desc">Sepak Bola, Bermain Game, jogging</string>
+    <string name="makes_title">Makes</string>
+    <string name="makes_desc">Membuat konten kreatif</string>
+    <string name="mikes_title">Mikes</string>
+    <string name="mikes_desc">Kopi, podcast teknologi. </string>
+    <string name="interest_title">Interest</string>
+    <string name="interest_desc">Software, Web development</string>
+    <string name="dream_title">Dream</string>
+    <string name="dream_desc">Software, Web developer</string>
+
+    <!-- Sosmed -->
+    <string name="instagram_url">https://www.instagram.com/difawitsqard/</string>
+    <string name="tiktok_url">https://www.tiktok.com/@difawitsqard</string>
+    <string name="facebook_url">https://www.facebook.com/facebook</string>
+
+    <!-- Music Favorit -->
+    <string-array name="music_titles">
+        <item>Best Friend</item>
+        <item>Television / So Far So Good</item>
+        <item>THE SHADE</item>
+    </string-array>
+    <string-array name="music_artist">
+        <item>Rex Orange County</item>
+        <item>Rex Orange County</item>
+        <item>Rex Orange County</item>
+    </string-array>
+
+    <!-- Video Favorit -->
+    <string-array name="video_titles">
+        <item>Breaking Bad (2008)</item>
+        <item>Better Call Saul (2015)</item>
+        <item>Sisu (2023)</item>
+    </string-array>
+    <string-array name="video_duration">
+        <item>5 season</item>
+        <item>6 season</item>
+        <item>1j 31m</item>
+    </string-array>
+
+    <!-- DailyActivity -->
+    <string-array name="activity_img">
+        <item>@drawable/difawitsqard_face_logo</item>
+        <item>@drawable/difawitsqard_face_logo</item>
+        <item>@drawable/difawitsqard_face_logo</item>
+        <item>@drawable/difawitsqard_face_logo</item>
+        <item>@drawable/difawitsqard_face_logo</item>
+        <item>@drawable/difawitsqard_face_logo</item>
+    </string-array>
+    <string-array name="activity_desc">
+        <item>Bangun tidur</item>
+        <item>Melakukan Kegiatan Di Pagi Hari</item>
+        <item>Berkerja</item>
+        <item>Belajar / Ngampus</item>
+        <item>Hiburan ( kalo sempet )</item>
+        <item>Tidur</item>
+    </string-array>
+
+    <!-- Friend -->
+    <string-array name="friend_img">
+        <item>@drawable/friend_wanyo</item>
+        <item>@drawable/friend_indi</item>
+        <item>@drawable/friend_fajar</item>
+    </string-array>
+    <string-array name="friend_name">
+        <item>Wanyo</item>
+        <item>Indi Bagus</item>
+        <item>Fajar Alam</item>
+    </string-array>
+
+    <!-- Galeri -->
+    <string-array name="galeri_img">
+        <item>@drawable/album1</item>
+        <item>@drawable/album2</item>
+        <item>@drawable/album3</item>
+        <item>@drawable/album4</item>
+    </string-array>
+
+</resources>

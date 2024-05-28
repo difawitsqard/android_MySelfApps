@@ -1,0 +1,178 @@
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:scrollbars="none">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp"
+        android:background="@color/white">
+
+        <!-- Profile Section -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="16dp"
+            android:gravity="center_horizontal">
+
+            <com.google.android.material.imageview.ShapeableImageView
+                android:id="@+id/imageViewProfile"
+                android:layout_width="140dp"
+                android:layout_height="140dp"
+
+                android:src="@drawable/album3"
+                android:scaleType="centerCrop"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true"
+                app:shapeAppearanceOverlay="@style/ShapeAppearanceOverlay.MaterialComponents.Circle"
+                android:contentDescription="@string/profile_picture_desc"
+                android:elevation="4dp"
+                android:padding="4dp"
+                app:strokeColor="@color/primary"
+                app:strokeWidth="4dp"/>
+
+            <TextView
+                android:id="@+id/profile_description"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:text="@string/full_name"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:gravity="center" />
+        </LinearLayout>
+
+        <!-- Contact Section -->
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="14dp"
+            android:layout_marginBottom="16dp"
+            app:cardCornerRadius="8dp"
+            app:cardElevation="4dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="16dp"
+                android:gravity="center_horizontal">
+
+                <Button
+                    android:id="@+id/button_call"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:text="Call Phone"
+                    android:layout_weight="1"
+                    android:backgroundTint="@color/primary"
+                    android:textColor="@android:color/white"
+                    android:layout_marginEnd="8dp" />
+
+                <Button
+                    android:id="@+id/button_send_email"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:text="Email"
+                    android:layout_weight="1"
+                    android:backgroundTint="@color/primary"
+                    android:textColor="@android:color/white"
+                    android:layout_marginStart="8dp" />
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="14dp"
+            app:cardCornerRadius="8dp"
+            app:cardElevation="4dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="16dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Follow Me"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginBottom="10dp"
+                    android:textColor="@color/primary" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:gravity="center_horizontal"
+                    android:paddingTop="4dp">
+
+                    <ImageButton
+                        android:id="@+id/button_instagram"
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:src="@drawable/ic_instagram"
+                        android:background="@null"
+                        android:scaleType="fitCenter"
+                        android:layout_marginEnd="8dp" />
+
+                    <ImageButton
+                        android:id="@+id/button_tiktok"
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:src="@drawable/ic_tiktok"
+                        android:background="@null"
+                        android:scaleType="fitCenter"
+                        android:layout_marginEnd="8dp" />
+
+                    <ImageButton
+                        android:id="@+id/button_facebook"
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:src="@drawable/ic_facebook"
+                        android:background="@null"
+                        android:scaleType="fitCenter"
+                        android:layout_marginEnd="8dp" />
+
+                </LinearLayout>
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+
+
+        <!-- Find Me Section -->
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="14dp"
+            android:layout_marginBottom="16dp"
+            app:cardCornerRadius="8dp"
+            app:cardElevation="4dp">
+
+            <fragment
+                android:id="@+id/map"
+                android:name="com.google.android.gms.maps.SupportMapFragment"
+                android:layout_width="match_parent"
+                android:layout_height="200dp" />
+        </androidx.cardview.widget.CardView>
+
+        <Button
+            android:id="@+id/button_about"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="14dp"
+            android:text="About"
+            android:backgroundTint="@color/primary"
+            android:textColor="@android:color/white" />
+
+    </LinearLayout>
+</ScrollView>

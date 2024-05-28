@@ -1,0 +1,284 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    android:orientation="vertical">
+
+        <!-- Profile Section -->
+        <androidx.cardview.widget.CardView
+            android:id="@+id/profileCardView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+            app:cardCornerRadius="8dp"
+            app:cardElevation="4dp"
+            android:nestedScrollingEnabled="false">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="16dp">
+
+                <com.google.android.material.imageview.ShapeableImageView
+                    android:id="@+id/imageViewProfile"
+                    android:layout_width="140dp"
+                    android:layout_height="140dp"
+                    android:layout_marginEnd="16dp"
+                    android:src="@drawable/album3"
+                    android:scaleType="centerCrop"
+                    android:layout_alignParentTop="true"
+                    android:layout_centerHorizontal="true"
+                    app:shapeAppearanceOverlay="@style/ShapeAppearanceOverlay.MaterialComponents.Circle"
+                    android:contentDescription="@string/profile_picture_desc"
+                    android:elevation="4dp"
+                    android:padding="4dp"
+                    app:strokeColor="@color/primary"
+                    app:strokeWidth="4dp"/>
+
+                <TextView
+                    android:id="@+id/textViewDescription"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/imageViewProfile"
+                    android:layout_marginTop="16dp"
+                    android:text="@string/profile_description"
+                    android:textSize="16sp"
+                    android:textColor="@android:color/black" />
+            </RelativeLayout>
+        </androidx.cardview.widget.CardView>
+
+        <!-- Interests Section -->
+<!--        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/interests_title"
+            android:textColor="@color/primary"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:layout_marginBottom="8dp" />-->
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+        <!-- Hobby -->
+        <LinearLayout
+            android:id="@+id/hobbyLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="8dp"
+            android:orientation="horizontal"
+            android:padding="12dp"
+            android:background="@drawable/bg_card">
+
+            <ImageView
+                android:id="@+id/imageViewHobby"
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:src="@drawable/ic_interest"
+                android:contentDescription="@string/hobby_title" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginStart="16dp">
+
+                <TextView
+                    android:id="@+id/textViewHobbyTitle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/hobby_title"
+                    android:textSize="16sp"
+                    android:textStyle="bold"
+                    android:textColor="@color/primary" />
+
+                <TextView
+                    android:id="@+id/textViewHobbyDesc"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/hobby_desc"
+                    android:textSize="14sp"
+                    android:textColor="@android:color/black" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <!-- Makes -->
+        <LinearLayout
+            android:id="@+id/makesLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="8dp"
+            android:orientation="horizontal"
+            android:padding="12dp"
+            android:background="@drawable/bg_card">
+
+            <ImageView
+                android:id="@+id/imageViewMakes"
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:src="@drawable/ic_interest"
+                android:contentDescription="@string/makes_title" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginStart="16dp">
+
+                <TextView
+                    android:id="@+id/textViewMakesTitle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/makes_title"
+                    android:textSize="16sp"
+                    android:textStyle="bold"
+                    android:textColor="@color/primary" />
+
+                <TextView
+                    android:id="@+id/textViewMakesDesc"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/makes_desc"
+                    android:textSize="14sp"
+                    android:textColor="@android:color/black" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <!-- Mikes -->
+        <LinearLayout
+            android:id="@+id/mikesLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="8dp"
+            android:orientation="horizontal"
+            android:padding="12dp"
+            android:background="@drawable/bg_card">
+
+            <ImageView
+                android:id="@+id/imageViewMikes"
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:src="@drawable/ic_interest"
+                android:contentDescription="@string/mikes_title" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginStart="16dp">
+
+                <TextView
+                    android:id="@+id/textViewMikesTitle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/mikes_title"
+                    android:textSize="16sp"
+                    android:textStyle="bold"
+                    android:textColor="@color/primary" />
+
+                <TextView
+                    android:id="@+id/textViewMikesDesc"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/mikes_desc"
+                    android:textSize="14sp"
+                    android:textColor="@android:color/black" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <!-- Interest -->
+        <LinearLayout
+            android:id="@+id/interestLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="8dp"
+            android:orientation="horizontal"
+            android:padding="12dp"
+            android:background="@drawable/bg_card">
+
+            <ImageView
+                android:id="@+id/imageViewInterest"
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:src="@drawable/ic_interest"
+                android:contentDescription="@string/interest_title" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginStart="16dp">
+
+                <TextView
+                    android:id="@+id/textViewInterestTitle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/interest_title"
+                    android:textSize="16sp"
+                    android:textStyle="bold"
+                    android:textColor="@color/primary" />
+
+                <TextView
+                    android:id="@+id/textViewInterestDesc"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/interest_desc"
+                    android:textSize="14sp"
+                    android:textColor="@android:color/black" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <!-- Cita-cita -->
+        <LinearLayout
+            android:id="@+id/dreamLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="8dp"
+            android:orientation="horizontal"
+            android:padding="12dp"
+            android:background="@drawable/bg_card">
+
+            <ImageView
+                android:id="@+id/imageViewDream"
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:src="@drawable/ic_interest"
+                android:contentDescription="@string/dream_title" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginStart="16dp">
+
+                <TextView
+                    android:id="@+id/textViewDreamTitle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/dream_title"
+                    android:textSize="16sp"
+                    android:textStyle="bold"
+                    android:textColor="@color/primary" />
+
+                <TextView
+                    android:id="@+id/textViewDreamDesc"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/dream_desc"
+                    android:textSize="14sp"
+                    android:textColor="@android:color/black" />
+            </LinearLayout>
+        </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>
